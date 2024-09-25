@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = ({data}) => {
+const Card = ({data, removeCard, index}) => {
 
   const {name, email, image } = data;
 
@@ -12,6 +12,7 @@ const Card = ({data}) => {
       <h2 className='text-xl font-semibold'>{name}</h2>
       <h2 className='text-zinc-200 font-semibold text-sm tracking-tight leading-1'>{email}</h2>
       <p className='text-center text-sm'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam.</p>
+      <button onClick={()=>removeCard(index)} className='bg-red-500 text-white rounded-lg py-1 px-2'>Remove</button>
     </div>
   )
 }
