@@ -1,6 +1,6 @@
-import React from 'react'
-import Nav from './components/Nav'
-import Rounting from './utilities/rounting'
+import React from "react";
+import Nav from "./components/Nav";
+import Rounting from "./utilities/rounting";
 
 const App = () => {
   return (
@@ -8,7 +8,7 @@ const App = () => {
       <Nav />
       <Rounting />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
