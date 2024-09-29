@@ -3,19 +3,21 @@ import React from "react";
 
 const Provider = () => {
   const sendData = () => {
-     // replace with your API endpoint
-    axios.post("/products", {
-      title: "test product",
-      price: 13.5,
-      description: "lorem ipsum set",
-      image: "https://i.pravatar.cc",
-      category: "electronic",
-    }).then(res=>{
-        alert('data send ho gya hai')
-    }).catch(err=> {
+    // replace with your API endpoint
+    axios
+      .post("/products", {
+        title: "test product",
+        price: 13.5,
+        description: "lorem ipsum set",
+        image: "https://i.pravatar.cc",
+        category: "electronic",
+      })
+      .then((res) => {
+        alert("data send ho gya hai");
+      })
+      .catch((err) => {
         console.log(err);
-        
-    })
+      });
   };
 
   return (
